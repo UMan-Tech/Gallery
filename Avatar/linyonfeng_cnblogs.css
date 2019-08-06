@@ -1,0 +1,583 @@
+﻿/*公用*/
+body {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑","宋体",Arial;
+    background: #343434  no-repeat top center;
+    min-width: 1200px;
+}
+
+#home {
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+    box-shadow: 0 0 10px #000;
+    margin: 40px auto;
+    width: 1200px;
+    background: #fff;
+    overflow: auto;
+    border: solid 1px #fff;
+}
+/*段落*/
+.postBody p, .postCon p {
+    margin: 7px 0;
+    line-height: 24px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+/*超链接*/
+a {
+    color: #414141;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:visited, a:hover {
+        color: #414141;
+    }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+image {
+    border: none;
+}
+
+#header {
+    padding: 20px;
+}
+/*博客标题*/
+#blogTitle, #blogTitle a {
+    font-weight: bold;
+    color: #666;
+}
+
+    #blogTitle .title {
+        margin-top: 10px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 36px;
+        padding-left: 120px;
+        background: white url('//files.cnblogs.com/files/linyonfeng/Lion.bmp') no-repeat;
+    }
+
+    #blogTitle, #blogTitle a:hover {
+        text-decoration: none;
+    }
+/*子标题*/
+.subtitle {
+    padding-left: 30px;
+    font-size: 14px;
+    color: #999;
+    font-weight: normal;
+    margin: 10px 0;
+}
+/*导航栏*/
+#navigator {
+    font-size: 16px;
+    height: 48px;
+    background: #343434;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#navList li {
+    margin: 0;
+    line-height: 48px;
+    display: inline-block;
+    float: left;
+}
+
+    #navList li:hover {
+        background: #696969;
+    }
+
+    #navList li a {
+        padding: 0 30px;
+        text-decoration: none;
+        line-height: 48px;
+        border: 0;
+        color: #fff;
+        display: -moz-inline-box;
+        display: inline-block;
+    }
+
+.blogStats {
+    height: 48px;
+    color: #fff;
+    line-height: 48px;
+}
+
+#main {
+    padding: 20px;
+}
+/*左边*/
+#sideBarMain {
+    padding: 0 10px 0 0;
+    background: #fff;
+    margin: 0 0 20px 0;
+    width: 190px;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+    #sideBarMain a {
+        color: #666;
+    }
+
+#leftcontentcontainer {
+    color: #666;
+}
+
+.newsItem {
+    color: #666;
+}
+/*公告*/
+#profile_block {
+    margin-top: 0px;
+    line-height: 24px;
+    text-align: left;
+}
+/*主面板*/
+#mainContent {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    background: #fff;
+    padding-bottom: 0px;
+    float: right;
+    width: 960px;
+    padding-left: 0px;
+}
+/*每日文章列表*/
+.day {
+    background: #fff;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+/*博客标题*/
+.postTitle a {
+    color: #414141;
+}
+
+.postTitle {
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #414141;
+    background: url('//images.cnblogs.com/cnblogs_com/libaoheng/305804/o_br229512.link(en-us,MSDN.10).gif') no-repeat 0 3px;
+    padding-left: 30px;
+}
+
+.dayTitle {
+    display: none;
+}
+/*摘要*/
+.c_b_p_desc {
+    padding: 10px;
+    line-height: 24px;
+    color: #888;
+}
+
+    .c_b_p_desc a {
+        color: #888;
+    }
+
+        .c_b_p_desc a:hover {
+            text-decoration: none;
+            border-bottom-width: 1px;
+            border-bottom-style: dotted;
+        }
+/*右侧图片*/
+.desc_img {
+    margin-left: 10px;
+    border: solid 1px #fff;
+    box-shadow: 0 0 10px #aaa;
+}
+/*博文页*/
+#topics .post {
+    background: #fff;
+}
+
+.postCon {
+    padding: 10px 20px 0 20px;
+}
+
+.postDesc {
+    margin: 0 30px;
+    margin-bottom: 2px;
+    padding: 8px 0px;
+    font-size: 12px;
+    color: #aaa;
+    background: #fff;
+    text-align: right;
+}
+
+    .postDesc a {
+        color: #AAA;
+    }
+
+.postBody {
+    padding: 0;
+}
+/*google搜索框*/
+#google_q, #q {
+    height: 22px;
+    width: 120px;
+    border: solid 1px #ccc;
+    box-shadow: inset 0 0 3px #ddd;
+    border-radius: 4px;
+}
+/*搜索按钮*/
+.btn_my_zzk {
+    font-family: 'Microsoft Yahei';
+    border: none;
+    height: 26px;
+    width: 60px;
+    padding: 1px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    background: #696969;
+    border-radius: 4px;
+    color: #fff;
+}
+
+    .btn_my_zzk:hover {
+        background: #414141;
+    }
+/*评论按钮*/
+
+#btn_comment_submit {
+    border: none;
+    height: 48px;
+    width: 120px;
+}
+/*评论按钮*/
+.comment_btn {
+    font-family: 'Microsoft Yahei';
+    border: none;
+    height: 48px;
+    width: 120px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    background: #696969;
+    color: #fff;
+}
+
+#btn_comment_submit:hover {
+    background: #414141;
+}
+/*评论标题*/
+.feedback_area_title {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #696969;
+    border-bottom: solid 6px #696969;
+}
+
+.feedbackListSubtitle {
+    font-size: 12px;
+    color: #888;
+}
+
+    .feedbackListSubtitle a {
+        color: #888;
+    }
+
+.comment_quote {
+    background: #FCFAAC;
+    padding: 15px;
+    border: 1px solid #CCC;
+}
+
+#commentform_title {
+    color: #696969;
+    background-image: none;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    padding: 10px 20px 10px 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: solid 6px #696969;
+}
+/*评论框*/
+#comment_form {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.commentform {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: #fff;
+}
+/*评论输入域*/
+#tbCommentBody {
+    font-family: 'MIcrosoft Yahei';
+    margin-top: 10px;
+    width: 95%;
+    max-width: 95%;
+    min-width: 95%;
+    background: white;
+    color: #333;
+    border: 2px solid #fff;
+    box-shadow: inset 0 0 8px #aaa;
+    padding: 10px;
+    height: 120px;
+    font-size: 14px;
+    min-height: 120px;
+}
+/*评论条目*/
+.feedbackItem {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px 0;
+    padding: 20px;
+    background: #F2F2F2;
+    box-shadow: 0 0 5px #aaa;
+}
+
+.feedbackListSubtitle {
+    font-weight: normal;
+}
+/*分类页*/
+.entrylist {
+    padding: 10px 20px;
+    background: #fff;
+}
+
+.entrylistItem {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.entrylistPosttitle {
+    font-size: 18px;
+    font-weight: bold;
+    background: url('//images.cnblogs.com/cnblogs_com/libaoheng/305804/o_br229512.link(en-us,MSDN.10).gif') no-repeat 0 3px;
+    padding-left: 30px;
+}
+
+.entrylistPostSummary {
+    padding: 10px;
+}
+
+.entrylistItemPostDesc {
+    font-size: 12px;
+    color: #999;
+    padding-left: 40px;
+}
+/*尾部*/
+#footer {
+    font-size: 12px;
+    margin: 20px;
+    padding: 12px;
+    text-align: center;
+    background: #343434;
+    color: #DDD;
+    font-size: 14px;
+}
+/*文章内图片*/
+#cnblogs_post_body p img {
+    margin: 10px;
+}
+
+
+
+
+.buryit {
+    display: none;
+}
+
+/*green_channel*/
+#green_channel {    
+    background: #EFEFEF;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 15px;
+    width: 96%;
+    border: none;
+    color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+/*最新评论*/
+#myposts .PostList {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px 0;
+    padding: 20px;
+    background: #F2F2F2;
+    box-shadow: 0 0 5px #aaa;
+}
+
+#myposts .postTitl2 a {
+    color: #414141;
+}
+
+.Abstract {
+    padding: 15px;
+    border: dotted 2px #999;
+    color: #999;
+    font-family: 'Microsoft Yahei';
+    border-radius: 4px;
+}
+
+.First {
+    margin: 10px 0;
+    font-family: 'Microsoft Yahei';
+    text-align: left;
+    padding: 6px 20px;
+    color: #fff;
+    background: #696969;
+    font-size: 20px;
+    border-radius: 4px;
+    clear: both;
+}
+
+
+.Second {
+    margin: 10px 0;
+    font-family: 'Microsoft Yahei';
+    padding: 6px 20px;
+    background: #93C8A2;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+    clear: both;
+}
+
+
+.Third {
+    margin: 10px 0;
+    padding: 6px 20px;
+    font-family: 'Microsoft Yahei';
+    margin: 15px 0;
+    font-size: 16px;
+    color: fff;
+    background: #C6EFD2;
+    color: #999;
+    border-radius: 4px;
+    clear: both;
+}
+
+.note {
+    font-size: 12px;
+    font-family: 'Microsoft Yahei';
+    clear: both;
+}
+
+.demo {
+    text-align: left;
+    padding: 6px 20px;
+    overflow: auto;
+    border-radius: 4px;
+    background: orange;
+    color: #fff;
+    font-size: 16px;
+    clear: both;
+}
+
+.cnblogs_Highlighter {
+    border: solid 1px #ccc;
+    clear: both;
+}
+
+.cnblogs_code {
+    background: #EFFFF4;
+    border: solid 0px #939393;
+    font-size: 14px;
+    clear: both;
+    padding: 10px 20px;
+}
+
+    .cnblogs_code pre {
+        font-size: 14px;
+    }
+
+    .cnblogs_code span {
+        font-family: Courier New;
+        font-size: 14px;
+    }
+
+
+.forFlow {
+    margin: 0 16px 0 66px;
+}
+
+#navList li a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.scrollBtn {
+    position: fixed;
+    right: 15px;
+    bottom: 45px;
+    width: 54px;
+    _position: absolute;
+}
+
+    .scrollBtn a {
+        display: inline-block;
+        overflow: hidden;
+        width: 54px;
+        height: 54px;
+        -webkit-transition: opacity .5s ease;
+        -moz-transition: opacity .5s ease;
+        -o-transition: opacity .5s ease;
+        transition: opacity .5s ease;
+        text-align: center;
+        opacity: .6;
+        color: white;
+        background: url(//images.cnblogs.com/cnblogs_com/ChenXu-net/517141/o_gototop.png) no-repeat 0 0;
+        filter: Alpha(Opacity=60);
+    }
+
+    .scrollBtn li {
+        float: left;
+        overflow: hidden;
+        height: 54px;
+        margin-bottom: 5px;
+    }
+
+    .scrollBtn a:hover {
+        opacity: 1;
+        filter: Alpha(Opacity=100);
+    }
+
+.sB-comment a {
+    height: 17px;
+    padding-top: 34px;
+    padding-bottom: 3px;
+    background-position: 0 -59px;
+}
+
+.sB-share a {
+    background-position: 0 -118px;
+}
+
+.sB-goTop a {
+    background-position: 0 -177px;
+}
